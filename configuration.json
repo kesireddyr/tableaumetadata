@@ -1,0 +1,18 @@
+{
+  "env":{
+    "server":"https://tableauserver.com/",
+    "site_id": "site_url_namespace",
+    "user":
+    "pwd":
+    "json_queries":"output/sqlqueries.csv",
+    "json_wb":"output/tableauwb.csv",
+    "json_ds":"output/tableauds.csv",
+    "json_tables": "output/tableautables.csv",
+    "json_databases":"output/tableaudatabases.csv",
+    "json_columns":"output/tableaucolumns.csv"    
+  },
+  "graphql_queries":"",
+  "graphql_wb":"",
+  "graphql_ds":""
+  
+}
