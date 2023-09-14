@@ -1,18 +1,17 @@
 {
-  "env":{
-    "server":"https://tableauserver.com/",
-    "site_id": "site_url_namespace",
-    "user":
-    "pwd":
-    "json_queries":"output/sqlqueries.csv",
-    "json_wb":"output/tableauwb.csv",
-    "json_ds":"output/tableauds.csv",
-    "json_tables": "output/tableautables.csv",
-    "json_databases":"output/tableaudatabases.csv",
-    "json_columns":"output/tableaucolumns.csv"    
+  "prod": {
+    "tableau_server": "https://tableauserver.com/",
+    "tableau_site_id": "Default",
+    "tableau_user": "",
+    "tableau_password": "",
+    "json_queries": "sqlqueries.csv",
+    "json_wb": "workbooks.csv",
+    "json_ds": "datasources.csv",
+    "json_tables": "tables.csv",
+    "json_databases": "database.csv",
+    "json_columns": "columns.csv"
   },
-  "graphql_queries":"",
-  "graphql_wb":"",
-  "graphql_ds":""
-  
+  "graphql_queries": "{\n nodes {\n id\n name\n query\n database {\n name\n connectionType\n }\n downstreamWorkbooks {\n projectName\n id\n name\n owner {\n name\n username\n email\n }\n }\n downstreamDatasources {\n projectName\n id\n name\n owner {\n name\n username\n email\n }\n }\n }\n pageInfo {\n hasNextPage\n endCursor\n }\n totalCount\n }",
+  "graphql_WB": "{\n nodes {\n id\n name\n projectName\n owner {\n name\n username\n email\n }\n upstreamDatabases {\n name\n connectionType\n }\n embeddedDatasources {\n id\n name\n }\n }\n pageInfo {\n hasNextPage\n endCursor\n }\n totalCount\n }",
+  "graphql_DS": "{\n nodes {\n id\n name\n projectName\n owner {\n name\n username\n email\n }\n }\n pageInfo {\n hasNextPage\n endCursor\n }\n totalCount\n }"
 }
